@@ -58,7 +58,7 @@ class SkeletonpkServiceProvider extends ServiceProvider
 
     public function register()
     {
-        if (! define('SKELETONPK_PATH')) {
+        if (! defined('SKELETONPK_PATH')) {
             define('SKELETONPK_PATH', realpath(__DIR__ . '/../'));
         }
 
