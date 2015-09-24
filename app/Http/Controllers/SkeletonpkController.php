@@ -1,4 +1,4 @@
-<?php namespace Alfredoem\Skeletonpk;
+<?php namespace Alfredoem\Skeletonpk\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
