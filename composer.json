@@ -1,12 +1,12 @@
 {
-    "name" : "alfredoem/skeletonpk",
+    "name" : "alfredoem/skeleton-package",
     "description": "Laravel Package Basic Skeleton",
     "keywords": [
         "alfredoem",
         "laravel",
         "packages"
     ],
-    "homepage": "https://github.com/alfredoem/skeletonpk",
+    "homepage": "https://github.com/alfredoem/skeleton-package",
     "license": "MIT",
     "authors": [
         {
