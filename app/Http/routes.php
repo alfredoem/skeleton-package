@@ -1,3 +1,3 @@
 <?php
 
-Route::controller('skeletonpk', 'SkeletonpkController');
+Route::controller('skeleton-package', 'SkeletonPackageController');

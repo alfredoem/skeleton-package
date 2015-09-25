@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Alfredoem\\Skeletonpk\\": "app"
+            "Alfredoem\\SkeletonPackage\\": "app"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Alfredoem\\Skeletonpk\\": "app"
+            "Alfredoem\\SkeletonPackage\\": "app"
         }
     }
 

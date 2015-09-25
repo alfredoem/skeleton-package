@@ -1,4 +1,4 @@
-<?php namespace Alfredoem\Skeletonpk\Console;
+<?php namespace Alfredoem\SkeletonPackage\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -11,14 +11,14 @@ class Install extends Command
     *
     * @var string
     */
-    protected $signature = 'skeletonpk:install {--force}';
+    protected $signature = 'SkeletonPackage:install {--force}';
 
     /**
      * The console command description
      *
      * @var string
      */
-    protected $description = 'Install the Skeletonpk scaffolding into the application';
+    protected $description = 'Install the SkeletonPackage scaffolding into the application';
 
     public function handle()
     {

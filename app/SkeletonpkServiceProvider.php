@@ -1,4 +1,4 @@
-<?php namespace Alfredoem\Skeletonpk;
+<?php namespace Alfredoem\SkeletonPackage;
 
 /**
  *
@@ -34,7 +34,7 @@ class SkeletonpkServiceProvider extends ServiceProvider
         if (! $this->app->routesAreCached()) {
             $router = app('router');
 
-            $router->group(['namespace' => 'Alfredoem\Skeletonpk\Http\Controllers'], function($router) {
+            $router->group(['namespace' => 'Alfredoem\SkeletonPackage\Http\Controllers'], function($router) {
                require __DIR__ . '/Http/routes.php';
             });
         }
@@ -42,15 +42,15 @@ class SkeletonpkServiceProvider extends ServiceProvider
 
     protected function defineResources()
     {
-        $this->loadViewsFrom(SKELETONPK_PATH . '/resources/views', 'skeletonpk');
+        $this->loadViewsFrom(SKELETONPK_PATH . '/resources/views', 'SkeletonPackage');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-               SKELETONPK_PATH . '/resources/views' => base_path('resources/views/vendor/skeletonpk'),
+               SKELETONPK_PATH . '/resources/views' => base_path('resources/views/vendor/SkeletonPackage'),
             ]);
 
             $this->publishes([
-                SKELETONPK_PATH . '/resources/views' => base_path('resources/views/vendor/skeletonpk'),
+                SKELETONPK_PATH . '/resources/views' => base_path('resources/views/vendor/SkeletonPackage'),
             ]);
         }
     }
@@ -63,7 +63,7 @@ class SkeletonpkServiceProvider extends ServiceProvider
         }
 
         if (! class_exists('Skeletonpk')) {
-            class_alias('Alfredoem\Skeletonpk\Skeletonpk', 'Skeletonpk');
+            class_alias('Alfredoem\SkeletonPackage\SkeletonPackage', 'SkeletonPackage');
         }
 
         if ($this->app->runningInConsole()) {
