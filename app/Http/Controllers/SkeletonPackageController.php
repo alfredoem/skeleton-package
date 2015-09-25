@@ -1,7 +1,7 @@
 <?php namespace Alfredoem\SkeletonPackage\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Alfredoem\Skeletonpk\SkeletonPackage;
+use Alfredoem\SkeletonPackage\SkeletonPackage;
 
 class SkeletonpkController extends Controller
 {
