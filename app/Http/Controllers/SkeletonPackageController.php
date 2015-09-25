@@ -3,7 +3,7 @@
 use App\Http\Controllers\Controller;
 use Alfredoem\SkeletonPackage\SkeletonPackage;
 
-class SkeletonpkController extends Controller
+class SkeletonPackageController extends Controller
 {
     public function getIndex()
     {

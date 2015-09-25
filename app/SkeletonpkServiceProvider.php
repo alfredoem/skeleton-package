@@ -11,7 +11,7 @@ use Illuminate\Routing\Router;
 use Alfredoem\Skeletonpk\Console\Install;
 
 
-class SkeletonpkServiceProvider extends ServiceProvider
+class SkeletonPackageServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred
