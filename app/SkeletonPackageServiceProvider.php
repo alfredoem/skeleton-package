@@ -8,7 +8,7 @@
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 
-use Alfredoem\Skeletonpk\Console\Install;
+use Alfredoem\SkeletonPackage\Console\Install;
 
 
 class SkeletonPackageServiceProvider extends ServiceProvider
