@@ -62,7 +62,7 @@ class SkeletonPackageServiceProvider extends ServiceProvider
             define('SKELETONPK_PATH', realpath(__DIR__ . '/../'));
         }
 
-        if (! class_exists('Skeletonpk')) {
+        if (! class_exists('SkeletonPackage')) {
             class_alias('Alfredoem\SkeletonPackage\SkeletonPackage', 'SkeletonPackage');
         }
 
