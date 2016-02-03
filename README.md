@@ -5,7 +5,7 @@ Laravel Package Basic Skeleton
 
 1. Add service providers to the `config/app.php`
 
-	Alfredoem\SkeletonPackage\SekeletonPackageServiceProvider::class,
+	Alfredoem\SkeletonPackage\SkeletonPackageServiceProvider::class,
 
 2. Personalise the package and have Fun.
 
