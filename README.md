@@ -1,4 +1,4 @@
-# skeletonpk
+# SkeletonPackage
 Laravel Package Basic Skeleton
 
 ## Configuration
