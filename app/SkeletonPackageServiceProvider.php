@@ -62,10 +62,7 @@ class SkeletonPackageServiceProvider extends ServiceProvider
             define('SKELETONPK_PATH', realpath(__DIR__ . '/../'));
         }
 
-        if (! class_exists('SkeletonPackage')) {
-            //class_alias('Alfredoem\SkeletonPackage\SkeletonPackage', 'SkeletonPackage');
-            $this->app->alias('SkeletonPackage', 'Alfredoem\SkeletonPackage\SkeletonPackage');
-        }
+        $this->app->alias('SkeletonPackage', 'Alfredoem\SkeletonPackage\SkeletonPackage');
 
         if ($this->app->runningInConsole()) {
             $this->commands([Install::class]);
