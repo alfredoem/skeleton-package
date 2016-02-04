@@ -18,7 +18,7 @@ class SkeletonPackageServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = false;
+    protected $defer = true;
 
     public function boot()
     {
@@ -63,7 +63,8 @@ class SkeletonPackageServiceProvider extends ServiceProvider
         }
 
         if (! class_exists('SkeletonPackage')) {
-            class_alias('Alfredoem\SkeletonPackage\SkeletonPackage', 'SkeletonPackage');
+            //class_alias('Alfredoem\SkeletonPackage\SkeletonPackage', 'SkeletonPackage');
+            $this->app->alias('SkeletonPackage', 'Alfredoem\SkeletonPackage\SkeletonPackage');
         }
 
         if ($this->app->runningInConsole()) {
